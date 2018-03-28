@@ -14,7 +14,7 @@ namespace ProjetIncident.Core.Views
 
         void Connect(object sender, System.EventArgs e)
         {
-            Application.Current.MainPage = new MasterDetailPageNavigation();
+            Application.Current.MainPage = NavigationDrawer.GetInstance().RootPage;
         }
     }
 }
