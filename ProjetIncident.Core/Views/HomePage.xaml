@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ProjetIncident.Core"
+    x:Class="ProjetIncident.Core.Views.HomePage"
+             Title="Accueil">
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+        <Label TextColor="Blue" FontAttributes="Bold" Text="Liste des incidents" HorizontalOptions="CenterAndExpand" Margin="10"></Label>
+        <ListView  ItemsSource="{Binding ListIncident}"></ListView>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+        <Frame
+                        x:Name="FABFrame"
+                        Padding="10"
+                        BackgroundColor="#ff944d"
+                        Margin="0,0,16,16"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        HasShadow="True">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Redirect_Add"></TapGestureRecognizer>
+                        </Frame.GestureRecognizers>
+                        <Image x:Name="FAB" Source="{local:ImageResource ProjetIncident.Core.Images.ic_add_black.png}"/>
+                        <Frame.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="45" Tablet="60"/>
+                        </Frame.WidthRequest>
+                        <Frame.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="45" Tablet="60"/>
+                        </Frame.HeightRequest>
+                        <Frame.CornerRadius>
+                            <OnIdiom x:TypeArguments="x:Single" Phone="32" Tablet="40"/>
+                        </Frame.CornerRadius>
+                    </Frame>
+            </AbsoluteLayout>
+        </StackLayout>
+</ContentPage>

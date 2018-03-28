@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.Views.ConnectionPage">
+<StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <Frame
+                    OutlineColor="Blue"
+                       HorizontalOptions="FillAndExpand"
+                       HasShadow="true"
+                       BackgroundColor="#e0e0eb"
+                       CornerRadius="10">
+                    <Frame.Content>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+        <Entry TextColor="White" BackgroundColor="Transparent" Placeholder="Identifiant"></Entry>
+        <Entry TextColor="White" BackgroundColor="Transparent" IsPassword="true" Placeholder="Mot de passe"></Entry>
+                </StackLayout>
+                </Frame.Content>
+        </Frame>
+        <Button HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="Navy" Margin="30,30,30,0" HeightRequest="60" Text="Connexion" Clicked="Connect"></Button>
+    </StackLayout>
+</ContentPage>

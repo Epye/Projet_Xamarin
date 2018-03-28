@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.Views.Add_Formulaire">
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Picker ItemsSource="{Binding ListCategory}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 50, 0, 0"></Picker>
+        <Label Text="Description :" Grid.Row="1" Grid.Column="0"></Label>
+        <Editor x:Name="descriptionEditor" Text="{Binding textDescription}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"></Editor>
+        <Image x:Name="PhotoImage" Grid.Row="3" Grid.Column="0"></Image>
+        <Button Text="Ajouter une photo" x:Name="CameraButton" Grid.Row="4" Grid.Column="0"></Button>
+        <Button Text="Ajouter un lieu" Grid.Row="4" Grid.Column="1"></Button>
+        <Button Text="Valider" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalOptions="Center" Command="{Binding Valid}"></Button>
+    </Grid>
+</ContentPage>
