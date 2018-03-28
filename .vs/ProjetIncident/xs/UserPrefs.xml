@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{87F2742A-BDC7-45B1-9E52-17FA64A7F300}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/Views/MasterDetailPageNavigation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/Views/ConnectionPage.xaml">
     <Files>
-      <File FileName="ProjetIncident.Core/Views/Add_Formulaire.xaml" Line="13" Column="33" />
-      <File FileName="ProjetIncident.Core/Views/MasterDetailPageNavigation.cs" Line="43" Column="35" />
+      <File FileName="ProjetIncident.Core/Views/MasterDetailPageNavigation.cs" Line="46" Column="6" />
+      <File FileName="ProjetIncident.Core/Views/ConnectionPage.xaml" Line="5" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ProjetIncident.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1AD9EBAD-0B6C-4C47-94AF-8278C4A75D0B" />
-  <MonoDevelop.Ide.ItemProperties.ProjetIncident.Droid PreferredExecutionTarget="Android.ce11160b0d94511f04" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.ProjetIncident.Droid PreferredExecutionTarget="Android.73QDU16914013931" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

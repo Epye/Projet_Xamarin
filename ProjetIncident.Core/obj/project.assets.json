@@ -3112,11 +3112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/ProjetIncident.Core.csproj",
+      "projectUniqueName": "/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/ProjetIncident.Core.csproj",
       "projectName": "ProjetIncident.Core",
-      "projectPath": "/Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/ProjetIncident.Core.csproj",
+      "projectPath": "/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/ProjetIncident.Core.csproj",
       "packagesPath": "/Users/iem/.nuget/packages/",
-      "outputPath": "/Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/obj",
+      "outputPath": "/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

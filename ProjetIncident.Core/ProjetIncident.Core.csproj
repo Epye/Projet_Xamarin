@@ -32,6 +32,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Images\ic_settings_black.png" />
     <EmbeddedResource Include="Images\ic_add_black.png" />
+    <EmbeddedResource Include="Images\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
@@ -48,6 +49,7 @@
     <None Remove="Views\MasterDetailPageNavigation.xaml" />
     <None Remove="Images\ic_settings_black.png" />
     <None Remove="Images\ic_add_black.png" />
+    <None Remove="Images\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\MasterDetailPageNavigation.xaml.cs">

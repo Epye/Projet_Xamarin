@@ -11,7 +11,8 @@
 namespace ProjetIncident.Core.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/iem/Desktop/ProjetIncident/ProjetIncident.Core/Views/ConnectionPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/Views/ConnectionPage.xa" +
+        "ml")]
     public partial class ConnectionPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
