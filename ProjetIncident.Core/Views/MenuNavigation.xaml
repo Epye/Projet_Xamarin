@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ProjetIncident.Core.Views.MenuNavigation">
+
+    <ListView SeparatorVisibility="None" ItemsSource="{Binding Menus}" SelectedItem="{Binding SelectedMenu, Mode=TwoWay}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="5,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding ImageName, Converter={StaticResource imgNameConverter}}" 
+                               WidthRequest="26" 
+                               HeightRequest="26" 
+                               Aspect="AspectFill"
+                               Margin="5,0,10,0"/>
+                        <Label Grid.Column="1"
+                               FontSize="Small"
+                               Text="{Binding Title}"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>

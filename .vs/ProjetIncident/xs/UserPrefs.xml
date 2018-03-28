@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{87F2742A-BDC7-45B1-9E52-17FA64A7F300}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/Views/MasterDetailPageNavigation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetIncident.Core/NavigationDrawer.cs">
     <Files>
-      <File FileName="ProjetIncident.Core/Views/Add_Formulaire.xaml" Line="13" Column="33" />
-      <File FileName="ProjetIncident.Core/Views/MasterDetailPageNavigation.cs" Line="43" Column="35" />
+      <File FileName="ProjetIncident.Core/NavigationDrawer.cs" Line="71" Column="52" />
+      <File FileName="ProjetIncident.Core/Views/ConnectionPage.xaml.cs" Line="17" Column="84" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ProjetIncident.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1AD9EBAD-0B6C-4C47-94AF-8278C4A75D0B" />

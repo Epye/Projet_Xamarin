@@ -32,6 +32,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Images\ic_settings_black.png" />
     <EmbeddedResource Include="Images\ic_add_black.png" />
+    <EmbeddedResource Include="Views\MenuNavigation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
@@ -48,6 +52,7 @@
     <None Remove="Views\MasterDetailPageNavigation.xaml" />
     <None Remove="Images\ic_settings_black.png" />
     <None Remove="Images\ic_add_black.png" />
+    <None Remove="Views\MenuNavigation.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\MasterDetailPageNavigation.xaml.cs">
