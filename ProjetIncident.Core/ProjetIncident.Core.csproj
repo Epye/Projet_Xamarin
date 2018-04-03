@@ -11,6 +11,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="2.5.0.122203" />
     <PackageReference Include="Xam.Plugin.Media" Version="3.1.3" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.2.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
@@ -26,10 +27,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MasterDetailPageNavigation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Images\ic_settings_black.png" />
     <EmbeddedResource Include="Images\ic_add_black.png" />
     <EmbeddedResource Include="Views\MenuNavigation.xaml">
@@ -37,6 +34,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\logo.jpg" />
+    <EmbeddedResource Include="Views\MapsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
@@ -50,20 +51,17 @@
     <None Remove="Views\Add_Formulaire.xaml" />
     <None Remove="Views\ConnectionPage.xaml" />
     <None Remove="Views\NavigationHome.xaml" />
-    <None Remove="Views\MasterDetailPageNavigation.xaml" />
     <None Remove="Images\ic_settings_black.png" />
     <None Remove="Images\ic_add_black.png" />
     <None Remove="Views\MenuNavigation.xaml" />
     <None Remove="Images\logo.jpg" />
+    <None Remove="Views\MapsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\MasterDetailPageNavigation.xaml.cs">
       <DependentUpon>MasterDetailPageNavigation.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\MainPage.cs">
-      <DependentUpon>MasterDetailPageNavigation.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\MasterDetailPageNavigation.cs">
       <DependentUpon>MasterDetailPageNavigation.xaml</DependentUpon>
     </Compile>
   </ItemGroup>

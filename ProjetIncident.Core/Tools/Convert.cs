@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MobileExamples.Tools
+namespace ProjetIncident.Core.Tools
 {
     public static class Convert
     {

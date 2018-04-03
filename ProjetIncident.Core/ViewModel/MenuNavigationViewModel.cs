@@ -103,6 +103,8 @@ namespace ProjetIncident.Core.ViewModel
 
             Menus = new ObservableCollection<MenuItem>();
             Menus.Add(new MenuItem("icon.png", "Accueil", typeof(HomePage), typeof(HomePageViewModel)));
+            Menus.Add(new MenuItem("icon.png", "Maps", typeof(MapsPage), typeof(MapsPageViewModel)));
+            Menus.Add(new MenuItem("icon.png", "Se déconnecter", typeof(ConnectionPage), typeof(ConnectionPage)));
         }
     }
 }

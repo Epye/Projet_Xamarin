@@ -9,7 +9,6 @@ namespace ProjetIncident.Core.Views
     {
         public HomePage()
         {
-            this.BindingContext = new HomePageViewModel();
             InitializeComponent();
         }
 

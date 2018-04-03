@@ -3,7 +3,7 @@ using System.Globalization;
 using System.IO;
 using Xamarin.Forms;
 
-namespace MobileExamples.Converters
+namespace ProjetIncident.Core.Converters
 {
     public class Base64StringToImageSourceConverter : IValueConverter
     {

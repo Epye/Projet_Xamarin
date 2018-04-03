@@ -14,7 +14,6 @@ namespace ProjetIncident.Core.Views
     {
         public Add_Formulaire()
         {
-            this.BindingContext = new AddIncidentViewModel();
             InitializeComponent();
             CameraButton.Clicked += CameraButton_Clicked;
         }

@@ -28,7 +28,7 @@ namespace ProjetIncident.Core.ViewModel
                 var dbcontext = await IncidentsDBContext.GetCurrent();
                 dbcontext.Add(incident);
                 dbcontext.SaveChanges();
-                Application.Current.MainPage = new MasterDetailPageNavigation();
+                await NavigationDrawer.GetInstance().NavigateToRootPage();
             });
 
 
