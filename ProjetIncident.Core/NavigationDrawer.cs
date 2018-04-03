@@ -24,8 +24,8 @@ namespace ProjetIncident.Core
         #endregion
 
         private Page _menuPage;
-        private NavigationDrawer _navigationPage;
-        protected NavigationDrawer NavigationPage
+        private NavigationPage _navigationPage;
+        protected NavigationPage NavigationPage
         {
             get { return _navigationPage; }
             private set
@@ -91,6 +91,5 @@ namespace ProjetIncident.Core
         {
             throw new NotImplementedException();
         }
-    }
     }
 }

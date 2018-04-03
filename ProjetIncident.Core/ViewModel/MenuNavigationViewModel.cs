@@ -81,9 +81,9 @@ namespace ProjetIncident.Core.ViewModel
                 {
                     SelectedMenu = null;
                     if (value.Page == null)
-                        Navigation.GetCurrent().NavigateToRootPage();
+                        NavigationDrawer.GetInstance().NavigateToRootPage();
                     else
-                        Navigation.GetCurrent().NavigateToWithoutPush(value.Page, value.ViewModel);
+                        NavigationDrawer.GetInstance().NavigateToWithoutPush(value.Page, value.ViewModel);
                 }
             }
         }
