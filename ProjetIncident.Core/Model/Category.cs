@@ -12,7 +12,7 @@ namespace ProjetIncident.Core.Model
 
         public string Label { get; set; }
 
-        public int ParentId { get; set; }
+        public int? ParentId { get; set; }
 
         [ForeignKey(nameof(ParentId))]
         public Category Parent { get; set; }
@@ -24,8 +24,9 @@ namespace ProjetIncident.Core.Model
         {
         }
 
-        public Category(string label){
+        public Category(string label, int? parentId){
             this.Label = label;
+            this.ParentId = parentId;
         }
 
 		public override string ToString()

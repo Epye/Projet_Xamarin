@@ -24,7 +24,7 @@ namespace ProjetIncident.Core.Migrations
                 {
                 b.Property<int>("Id").ValueGeneratedOnAdd();
                     b.Property<string>("Label");
-                    b.Property<int>("ParentId");
+                    b.Property<int?>("ParentId");
                     b.HasKey("Id");
                     b.HasIndex("ParentId");
                     b.ToTable("Categories");

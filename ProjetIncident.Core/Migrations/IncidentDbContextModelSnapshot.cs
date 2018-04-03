@@ -27,7 +27,7 @@ namespace ProjetIncident.Core.Migrations
 
                     b.Property<string>("Label");
 
-                    b.Property<int>("ParentId");
+                    b.Property<int?>("ParentId");
 
                     b.HasKey("Id");
 

@@ -15,7 +15,7 @@ namespace ProjetIncident.Core.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Label = table.Column<string>(nullable: true),
-                    ParentId = table.Column<int>(nullable: false)
+                    ParentId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {

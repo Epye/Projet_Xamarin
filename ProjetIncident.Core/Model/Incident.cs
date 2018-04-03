@@ -42,12 +42,17 @@ namespace ProjetIncident.Core.Model
         {
         }
 
-        public Incident(String description, double Latitude, double Longitude, double Altitude, StatusValues Status, DateTime StatusChangedDate){
+        public Incident(String description, double Latitude, double Longitude, double Altitude, StatusValues Status, DateTime StatusChangedDate, Category categorie, User user, List<Photo> photos){
+            this.SubmissionDate = DateTime.Now;
             this.Description = description;
             this.Latitude = Latitude;
+            this.Longitude = Longitude;
             this.Altitude = Altitude;
             this.Status = Status;
             this.StatusChangedDate = StatusChangedDate;
+            this.Category = categorie;
+            this.User = user;
+            this.Photos = photos;
         }
 
         public Incident(string incident){

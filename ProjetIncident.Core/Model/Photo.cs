@@ -19,5 +19,11 @@ namespace ProjetIncident.Core.Model
         public Photo()
         {
         }
+
+        public Photo(string photoBase64)
+        {
+            this.PhotoBase64 = photoBase64;
+            this.IncidentId = DateTime.Now;
+        }
     }
 }

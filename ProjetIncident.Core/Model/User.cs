@@ -17,10 +17,14 @@ namespace ProjetIncident.Core.Model
 
 
         [InverseProperty(nameof(Incident.User))]
-        public List<Incident> Inidents { get; set; }
+        public List<Incident> Incidents { get; set; }
 
-        public User()
+        public User(string LastName, string FirstName, string EMail, string EncryptedPassword)
         {
+            this.LastName = LastName;
+            this.FirstName = FirstName;
+            this.EMail = EMail;
+            this.EncryptedPassword = EncryptedPassword;
         }
     }
 }
