@@ -15,7 +15,6 @@ namespace ProjetIncident.Core.Views
         public Add_Formulaire()
         {
             InitializeComponent();
-            CameraButton.Clicked += CameraButton_Clicked;
         }
 
         /*async Task Valid(object sender, System.EventArgs e)
@@ -28,7 +27,7 @@ namespace ProjetIncident.Core.Views
             Application.Current.MainPage = new MasterDetailPageNavigation();
         }*/
 
-        private async void CameraButton_Clicked(object sender, EventArgs e)
+        /*private async void CameraButton_Clicked(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
             var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions()
@@ -41,7 +40,7 @@ namespace ProjetIncident.Core.Views
 
             if (photo != null)
                 PhotoImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
-        }
+        }*/
     }
 
 }

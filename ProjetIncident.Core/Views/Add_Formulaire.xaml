@@ -17,8 +17,22 @@
         <Picker ItemsSource="{Binding ListCategory}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 50, 0, 0"></Picker>
         <Label Text="Description :" Grid.Row="1" Grid.Column="0"></Label>
         <Editor x:Name="descriptionEditor" Text="{Binding textDescription}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"></Editor>
-        <Image x:Name="PhotoImage" Grid.Row="3" Grid.Column="0"></Image>
-        <Button Text="Ajouter une photo" x:Name="CameraButton" Grid.Row="4" Grid.Column="0"></Button>
+        <Image x:Name="PhotoImage" ></Image>
+        <ListView Grid.Row="3" Grid.Column="0"
+                      ItemsSource="{Binding Photos}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Image Aspect="AspectFit"
+                                   Margin="5"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"
+                                   Source="{Binding Converter={StaticResource imgBase64Converter}}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        <Button Text="Ajouter une photo" Grid.Row="4" Grid.Column="0" Command="{Binding TakePhoto}" ></Button>
         <Button Text="Ajouter un lieu" Grid.Row="4" Grid.Column="1"></Button>
         <Button Text="Valider" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalOptions="Center" Command="{Binding Valid}"></Button>
     </Grid>

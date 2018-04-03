@@ -27,3 +27,17 @@
 /Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.dll
 /Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.pdb
 /Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.csprojResolveAssemblyReference.cache
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/bin/Debug/netstandard2.0/ProjetIncident.Core.deps.json
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/bin/Debug/netstandard2.0/ProjetIncident.Core.dll
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/bin/Debug/netstandard2.0/ProjetIncident.Core.pdb
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.csproj.CoreCompileInputs.cache
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.App.xaml.g.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.Views.HomePage.xaml.g.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.Views.Add_Formulaire.xaml.g.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.Views.ConnectionPage.xaml.g.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.Views.MenuNavigation.xaml.g.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.Views.MapsPage.xaml.g.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.AssemblyInfoInputs.cache
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.AssemblyInfo.cs
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.dll
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.pdb

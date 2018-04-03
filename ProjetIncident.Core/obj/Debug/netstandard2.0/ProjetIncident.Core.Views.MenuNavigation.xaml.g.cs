@@ -11,8 +11,8 @@
 namespace ProjetIncident.Core.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/iem/Documents/Projet_Xamarin/ProjetIncident/ProjetIncident.Core/Views/Menu" +
-        "Navigation.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/Views/MenuNavigation.xa" +
+        "ml")]
     public partial class MenuNavigation : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
