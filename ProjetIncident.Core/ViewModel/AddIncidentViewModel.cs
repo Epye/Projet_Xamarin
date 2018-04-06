@@ -15,18 +15,24 @@ namespace ProjetIncident.Core.ViewModel
 {
     public class AddIncidentViewModel : BaseViewModel
     {
-
+        List<Photo> photos = new List<Photo>();
 
         public DelegateCommand Valid{
             get => new DelegateCommand(async () =>
             {
-                List<Photo> photos = new List<Photo>();
-                photos.Add(new Photo("trntrdntrzn"));
-
                 var incident = new Incident(textDescription, 0.0, 0.0, 0.0, Incident.StatusValues.Submitted, DateTime.Now, new Category("test", null), new User("LANNIER", "Johan", "johan@lannier.fr", "encryptedMDP"), photos);
                 var dbcontext = await IncidentsDBContext.GetCurrent();
                 await dbcontext.AddAsync(incident);
+
+                //fonctionne pas ? pas de photos dans la bd ?
+                for (int i = 0; i < photos.Count; i++){
+                    await dbcontext.AddAsync(photos[i]);
+                }
+                
                 await dbcontext.SaveChangesAsync();
+
+                //ajouter catégorie dans BD
+
                 await NavigationDrawer.GetInstance().PopAsync();
             });
         }
@@ -54,6 +60,7 @@ namespace ProjetIncident.Core.ViewModel
                         imageString = Tools.Convert.BytesToBase64String(imageBinary);
                     }
                     System.IO.File.Delete(photo.Path);
+                    photos.Add(new Photo(imageString));
                     Photos.Add(imageString);
                 }
             });
