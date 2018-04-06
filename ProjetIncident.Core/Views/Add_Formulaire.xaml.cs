@@ -15,6 +15,7 @@ namespace ProjetIncident.Core.Views
         public Add_Formulaire()
         {
             InitializeComponent();
+            this.BindingContext = new AddIncidentViewModel();
         }
 
         /*async Task Valid(object sender, System.EventArgs e)

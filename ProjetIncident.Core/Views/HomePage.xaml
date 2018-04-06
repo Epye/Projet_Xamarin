@@ -6,7 +6,7 @@
              Title="Accueil">
         <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
         <Label TextColor="Blue" FontAttributes="Bold" Text="Liste des incidents" HorizontalOptions="CenterAndExpand" Margin="10"></Label>
-        <ListView  ItemsSource="{Binding ListIncident}"></ListView>
+        <ListView x:Name="ListView" SelectedItem="{Binding ItemSelected, Mode=TwoWay}" ItemsSource="{Binding ListIncident}"></ListView>
         <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 
         <Frame

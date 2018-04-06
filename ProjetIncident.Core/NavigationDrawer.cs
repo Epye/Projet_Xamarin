@@ -70,16 +70,23 @@ namespace ProjetIncident.Core
         {
             await _navigationPage.PopToRootAsync();
         }
+
         public void NavigateToWithoutPush(Page page, object viewModel = null)
         {
             if (viewModel != null) page.BindingContext = viewModel;
             NavigationPage = new NavigationPage(page);
             MenuIsPresented = false;
         }
+
         public async Task NavigateToWithPush(Page page, object viewModel = null)
         {
             if (viewModel != null) page.BindingContext = viewModel;
             await NavigationPage.Navigation.PushAsync(page);
+        }
+
+        public async Task PopAsync()
+        {
+            await NavigationPage.Navigation.PopAsync();
         }
 
         public static implicit operator Page(NavigationDrawer v)

@@ -38,6 +38,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Details_Incident.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
@@ -56,6 +60,7 @@
     <None Remove="Views\MenuNavigation.xaml" />
     <None Remove="Images\logo.jpg" />
     <None Remove="Views\MapsPage.xaml" />
+    <None Remove="Views\Details_Incident.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\MasterDetailPageNavigation.xaml.cs">

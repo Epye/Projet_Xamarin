@@ -41,3 +41,5 @@
 /Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.AssemblyInfo.cs
 /Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.dll
 /Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.pdb
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.csprojResolveAssemblyReference.cache
+/Users/iem/Desktop/NET/Projet_Xamarin/ProjetIncident.Core/obj/Debug/netstandard2.0/ProjetIncident.Core.Views.Details_Incident.xaml.g.cs

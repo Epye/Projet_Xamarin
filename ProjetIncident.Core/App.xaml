@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.App">
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:conv="clr-namespace:ProjetIncident.Core.Converters" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.App">
 	<Application.Resources>
-		<!-- Application resource dictionary -->
+		<ResourceDictionary>
+             <conv:Base64StringToImageSourceConverter x:Key="imgBase64Converter"/>
+             <conv:ImageNameToImageSourceConverter x:Key="imgNameConverter"/>
+        </ResourceDictionary>
 	</Application.Resources>
 </Application>

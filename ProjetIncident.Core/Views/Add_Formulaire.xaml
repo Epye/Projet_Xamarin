@@ -29,6 +29,7 @@
                                    VerticalOptions="CenterAndExpand"
                                    Source="{Binding Converter={StaticResource imgBase64Converter}}"/>
                         </ViewCell>
+                    
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

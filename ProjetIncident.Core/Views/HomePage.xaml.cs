@@ -7,14 +7,25 @@ namespace ProjetIncident.Core.Views
 {
     public partial class HomePage : ContentPage
     {
+        HomePageViewModel viewModel;
+
         public HomePage()
         {
             InitializeComponent();
+            viewModel = new HomePageViewModel();
+            this.BindingContext = viewModel;
         }
 
-        void Redirect_Add(object sender, System.EventArgs e)
+        async void Redirect_Add(object sender, System.EventArgs e)
         {
-            Application.Current.MainPage = new Add_Formulaire();
+            var newPage = new Add_Formulaire();
+            await Navigation.PushAsync(newPage);
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            viewModel.loadData();
         }
     }
 }

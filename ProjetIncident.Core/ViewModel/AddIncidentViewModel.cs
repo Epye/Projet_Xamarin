@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using Plugin.Media;
+using ProjetIncident.Core.Commands;
 using ProjetIncident.Core.DataAccess;
 using ProjetIncident.Core.Model;
 using ProjetIncident.Core.ViewModel;
@@ -14,17 +15,23 @@ namespace ProjetIncident.Core.ViewModel
 {
     public class AddIncidentViewModel : BaseViewModel
     {
-        public ICommand Valid { get; protected set; }
 
 
-        public String textDescription { get; set; }
-        public ObservableCollection<String> Photos{
-            get => GetProperty<ObservableCollection<String>>();
-            set => SetProperty(value); 
+        public DelegateCommand Valid{
+            get => new DelegateCommand(async () =>
+            {
+                List<Photo> photos = new List<Photo>();
+                photos.Add(new Photo("trntrdntrzn"));
+
+                var incident = new Incident(textDescription, 0.0, 0.0, 0.0, Incident.StatusValues.Submitted, DateTime.Now, new Category("test", null), new User("LANNIER", "Johan", "johan@lannier.fr", "encryptedMDP"), photos);
+                var dbcontext = await IncidentsDBContext.GetCurrent();
+                await dbcontext.AddAsync(incident);
+                await dbcontext.SaveChangesAsync();
+                await NavigationDrawer.GetInstance().PopAsync();
+            });
         }
 
-        public DelegateCommand TakePhoto
-        {
+        public DelegateCommand TakePhoto{
             get => new DelegateCommand(async () =>
             {
                 var imageString = "";
@@ -52,21 +59,18 @@ namespace ProjetIncident.Core.ViewModel
             });
         }
 
+
+        public String textDescription { get; set; }
+        public ObservableCollection<String> Photos{
+            get => GetProperty<ObservableCollection<String>>();
+            set => SetProperty(value); 
+        }
+
+
         public AddIncidentViewModel()
         {
             Photos = new ObservableCollection<string>();
 
-            Valid = new Command(async () =>
-            {
-                List<Photo> photos = new List<Photo>();
-                photos.Add(new Photo("trntrdntrzn"));
-
-                var incident = new Incident(textDescription, 0.0, 0.0, 0.0, Incident.StatusValues.Submitted, DateTime.Now, new Category("test", null), new User("LANNIER", "Johan", "johan@lannier.fr", "encryptedMDP"), photos);
-                var dbcontext = await IncidentsDBContext.GetCurrent();
-                await dbcontext.AddAsync(incident);
-                await dbcontext.SaveChangesAsync();
-                await NavigationDrawer.GetInstance().NavigateToRootPage();
-            });
         }
 
     }
