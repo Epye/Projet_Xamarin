@@ -123,6 +123,17 @@ namespace ProjetIncident.Core.ViewModel
             IsLoading = false;
             MapType = MapType.Street;
             Pins = new ObservableCollection<Pin>();
+            var dbcontext = await IncidentsDBContext.GetCurrent();
+            var listItems=dbcontext.Incidents.Where(i => i.Status == Incident.StatusValues.Submitted).ToList();
+            for (int i = 0; i < listItems.Count;i++){
+                Pins.Add(new Pin() 
+                {
+                    Address = "",
+                    Label = listItems[i].Description,
+                    Position = new Position(listItems[i].Latitude, listItems[i].Longitude),
+                    Type = PinType.SavedPin
+                })
+            }
             NewAddress = "31 rue Smith, 69002 LYON";
         }
 
