@@ -4,7 +4,7 @@
     <StackLayout VerticalOptions="CenterAndExpand" Padding="20"> 
  
         <Image 
-            Source="{local:ImageResource ProjetIncident.Core.Images.logo.jpg}" 
+            Source="{local:ImageResource ProjetIncident.Core.Images.logo.png}" 
         /> 
         <Frame
                     OutlineColor="Blue"
