@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.Views.Add_Formulaire">
-	<Grid>
+	<Grid Padding="12px">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="0.3*"></RowDefinition>
@@ -34,7 +34,7 @@
                 </ListView.ItemTemplate>
             </ListView>
         <Button Text="Ajouter une photo" Grid.Row="4" Grid.Column="0" Command="{Binding TakePhoto}" ></Button>
-        <Button Text="Ajouter un lieu" Grid.Row="4" Grid.Column="1"></Button>
+        <Button Text="Ajouter un lieu" IsEnabled="false" Grid.Row="4" Grid.Column="1"></Button>
         <Button Text="Valider" Grid.Row="5" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalOptions="Center" Command="{Binding Valid}"></Button>
     </Grid>
 </ContentPage>

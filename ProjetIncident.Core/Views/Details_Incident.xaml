@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ProjetIncident.Core.Views.Details_Incident">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding description}"/>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label HorizontalOptions="CenterAndExpand" Text="Détails de l'incident"/>
+            <Label HorizontalOptions="CenterAndExpand" Text="{Binding description}"/>
             </StackLayout>
     </ContentPage.Content>
 </ContentPage>

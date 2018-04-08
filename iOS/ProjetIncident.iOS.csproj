@@ -202,7 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjetIncident.Core\ProjetIncident.Core.csproj">
-      <Project>{AFC92FA1-2646-4927-93A3-B9AB23DBB560}</Project>
+      <Project>{F80A0F69-245E-45F1-8D3B-2380E3AD280B}</Project>
       <Name>ProjetIncident.Core</Name>
     </ProjectReference>
   </ItemGroup>

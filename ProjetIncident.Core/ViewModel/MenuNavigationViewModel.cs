@@ -102,9 +102,9 @@ namespace ProjetIncident.Core.ViewModel
             }
 
             Menus = new ObservableCollection<MenuItem>();
-            Menus.Add(new MenuItem("icon.png", "Accueil", typeof(HomePage), typeof(HomePageViewModel)));
-            Menus.Add(new MenuItem("icon.png", "Maps", typeof(MapsPage), typeof(MapsPageViewModel)));
-            Menus.Add(new MenuItem("icon.png", "Se déconnecter", typeof(ConnectionPage), typeof(ConnectionPage)));
+            Menus.Add(new MenuItem("ic_home_black_24dp.png", "Accueil", typeof(HomePage), typeof(HomePageViewModel)));
+            Menus.Add(new MenuItem("ic_add_location_black_24dp.png", "Maps", typeof(MapsPage), typeof(MapsPageViewModel)));
+            Menus.Add(new MenuItem("ic_exit_to_app_black_24dp.png", "Se déconnecter", typeof(ConnectionPage), typeof(ConnectionPage)));
         }
     }
 }
